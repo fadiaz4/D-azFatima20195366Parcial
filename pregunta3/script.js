@@ -36,6 +36,23 @@ function displayDetails() {
 }
 
 function Sumatoriatodos() {
-
     alert('suma de todas las sumas')
+    // obtenemos el numero de columnas
+    const columnas = document.querySelectorAll("display");
+
+    // obtenemos las fila de los totales
+    const totalFila = document.querySelectorAll("display");
+
+    // bucle por cada una de las columnas excepto la primera
+    for (let i = 1; i < columnas.length; i++) {
+        let total = 0;
+
+        // obtenemos el valor de cada una de las filas
+        filas.forEach((fila) => {
+            total += parseFloat(fila.querySelectorAll("display")[i].innerHTML);
+        });
+
+        // mostramos el total en la ultima fila
+        totalFila[i].innerHTML = total.toFixed(2);
+    }
 }
