@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Pregunta3</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -16,7 +16,7 @@
             <div class="input">Numero 2: <input id="numero2" type="number" />
             </div>
 
-            <button id="sumar">Sumar</button>
+            <button id="sumar" onClick="displayDetails()">Sumar</button>
         </div>
         
         <table id="display">
@@ -27,14 +27,10 @@
                 <th>Status</th>
             </tr>
         </table>
-        
+
         <script src="script.js"></script>
     </body>
 
+    <button id="sumartodos" onClick="Sumatoriatodos()">Sumar todos los resultados</button>
 
-    Crear un index.html con lo básico de html5 para iniciar una página más un formulario que
-pida dos números y los sume, al dar click en el boton sumar debe agregar una fila a la tabla
-que se encuentra abajo del formulario. Si la respuesta de la suma es mayor que 10 una de
-las columnas debe decir 10+, si es igual a 10, 10= y si es menor que 10, debe decir 10-. Luego
-con otro boton cerca de la tabla sumar todos los resultados y dar en una alerta ese numero. 
 </html>
